@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/surface"/>
+        <ScrollView
+            android:id="@+id/panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/playerName"
+                    android:textAlignment="center"
+                    android:padding="16dp"
+                    android:text="Controller: Unknown"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/running_time"
+                        android:layout_alignParentLeft="true"
+                        android:text="running"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/remaining_time"
+                        android:layout_alignParentRight="true"
+                        android:text="remaining"
+                        />
+                </RelativeLayout>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekbar"
+                    android:layout_margin="20dp"
+                    android:progressDrawable="@drawable/progress_bar"
+                    />
+
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="3dp"
+                    android:minHeight="3dp"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:id="@+id/progressBar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/previous"
+                        android:background="@android:drawable/ic_media_previous"
+                        android:layout_margin="10dp"/>
+                    <FrameLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp">
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/play"
+                            android:background="@android:drawable/ic_media_play"
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/pause"
+                            android:background="@android:drawable/ic_media_pause"
+                            android:visibility="invisible"/>
+                    </FrameLayout>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/stop"
+                        android:background="@android:drawable/checkbox_off_background"
+                        android:layout_margin="10dp"/>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/next"
+                        android:background="@android:drawable/ic_media_next"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:id="@+id/title"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:id="@+id/error"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_play"
+                    android:id="@+id/imageView" />
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekbar2"
+                    android:layout_margin="20dp"
+                    android:progressDrawable="@drawable/progress_bar"
+                    />
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:indeterminateTint="#fff"
+                    android:visibility="invisible"
+                    android:id="@+id/loading" />
+                <Button
+                    android:id="@+id/btn_refresh_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refresh View"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
