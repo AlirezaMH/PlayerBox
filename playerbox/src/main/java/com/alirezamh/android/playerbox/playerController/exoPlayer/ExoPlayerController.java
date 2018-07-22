@@ -82,7 +82,7 @@ public class ExoPlayerController implements PlayerController {
 
     @Override
     public SimpleExoPlayer getPlayer() {
-        return null;
+        return player.getPlayer();
     }
 
 

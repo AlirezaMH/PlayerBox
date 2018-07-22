@@ -1,9 +1,9 @@
 id          = playerbox
 name        = PlayerBox
 desc        = Easily add a Player to your App that handles all your media playbacks. PlayerBox takes your own Elements i.e. Play Button, SeekBar, etc. and handles them for you. You can use the Events of PlayerBox to catch them and handle them as you wish. Url streams, remote files and also local files can be played. PlayerBox plays all formats supported natively by android and ExoPlayer.
-version     = 0.6.4
-versionName = 0.6.4-beta
-versionCode = 25
+version     = 0.6.5
+versionName = 0.6.5-beta
+versionCode = 26
 groupId     = com.alirezamh.android.playerbox
 siteUrl     = https\://github.com/AlirezaMH/PlayerBox
 gitUrl      = https\://github.com/AlirezaMH/PlayerBox.git

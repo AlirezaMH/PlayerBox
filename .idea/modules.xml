@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PlayerBoxLibrary.iml" filepath="$PROJECT_DIR$/PlayerBoxLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PlayerBox.iml" filepath="$PROJECT_DIR$/PlayerBox.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/playerbox/playerbox.iml" filepath="$PROJECT_DIR$/playerbox/playerbox.iml" />
     </modules>
